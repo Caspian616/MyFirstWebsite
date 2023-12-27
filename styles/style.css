@@ -11,22 +11,36 @@ body {
     }
 
 .mainbody{
-    padding: 0px 10px;
+    padding: 50px 400px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 img {
-    display: block;
-    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
     }
+
+.text {
+    padding-right: 20px;
+}
 
 h1 {
     font-size: 60px;
     text-align: center;
     margin: 0;
     padding: 20px 0;
-    color: #000000;
-    border-bottom: solid;
+    color: #1C50F5;
     }
+
+h2 {
+    color: #1C50F5;
+    font-size: 20px;
+}
 
 p,
 li {
@@ -35,7 +49,19 @@ li {
     letter-spacing: 1px;
     }
 
-.column {
-    float: left;
-    width: 50%;
+.list {
+    margin: 0;
+    padding: 0;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #000;
+    font-size: 12px;
+  }
+
+.list-container {
+    flex: 1;
+    margin-right: 20px; /* Adjust as needed to create space between lists */
+  }
