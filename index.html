@@ -1,93 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <link href="styles/style.css" rel="stylesheet" /> <!-- css -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!-- google font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" /> <!-- website icon -->
+    <link href="styles/style.css" rel="stylesheet" />
+    <!-- css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- website icon -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="author" content="Caspian" /> <!-- author -->
-    <meta name="description" content="A website made by Caspian" /> <!-- website description -->
-    <title>Caspian's Portfolio</title> <!-- name of website -->
+    <meta name="author" content="Caspian" />
+    <!-- author -->
+    <meta name="description" content="A website made by Caspian" />
+    <!-- website description -->
+    <title>Caspian's Portfolio</title>
+    <!-- name of website -->
   </head>
 
   <body>
+    <!-- Navigation Bar/Header -->
+    <section class="header">
+      <!-- Create section with class name = header -->
+      <nav>
+        <!-- nav bar -->
+        <a href="index.html"><h1>Caspian's Portfolio</h1></a>
+        <!-- h1 link to index.html-->
+        <div class="nav-links" id="navLinks">
+          <!-- nav links -->
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <!-- unordered links -->
+            <li><a href="">HOME</a></li>
+            <!-- links -->
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">WORK EXPERIENCES</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="menuBar" onclick="showMenu()"></i>
+      </nav>
+    </section>
 
-    <!-- Header 1 --> 
-      <section class="header">
-        <nav>
-          <a href="index.html"><h1>Caspian's Portfolio</h1></a>
-          <div class="nav-links">
-            <ul>
-              <li><a href="">HOME</a></li>
-              <li><a href="">PROJECTS</a></li>
-              <li><a href="">WORK EXPERIENCES</a></li>
-            </ul>
-          </div>
-        </nav>
-      </section>
+    <section class="about-me">
+      <div class="row">
+        <div class="about-col">
+          <h2>About Me</h2>
+          <p>
+            Singapore Polytechnic graduate of the Diploma in Mechatronics &
+            Robotics. A self-motivated and open-minded student, aspiring to
+            become a robotics engineer in hopes of improving quality of life and
+            making the world a better place to live in.
+          </p>
+        </div>
+        <div class="about-col">
+          <img src="images/profile.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="hobbies">
+      <h2>Hobbies & Interests</h2>
+      <p>
+        I'm an avid coder that has been writing code for over 5 years. Some of
+        my passion projects that involve coding are automonous guided vehicle
+        (AGV), pizza maker machine and autonomous driving. I also play football
+        casually and was involved in a neighbourhood football club. Some of my
+        interests include keeping up with the latest tech and board games.
+      </p>
+    </section>
+
+    <section class="achievements">
+      <div class="row">
+        <div class="achievements-col">
+          <h2>Achievements</h2>
+          <ul class="list">
+            <li>MAE Excellent Service Award 2023 Recipient</li>
+            <li>Singapore Polytechnic Engineering Show 2023 - Silver Award</li>
+            <li>
+              Singapore Polytechnic Excellence Awards 2022 - Outstanding
+              Contributions (Group)
+            </li>
+          </ul>
+        </div>
+        <div class="achievements-col">
+          <h2>Work Experiences</h2>
+          <ul class="list">
+            <li>Challenger Apple Sales Associate</li>
+            <li>Sport Singapore Assistant Sports Technologist</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- Main Body -->
     <div class="mainbody">
-
-      <!-- About Me-->
-      <div class="container">
-        <div class="text">
-          <h2>About Me</h2>
-          <p>Singapore Polytechnic graduate of the Diploma in Mechatronics & Robotics. 
-            A self-motivated and open-minded student, aspiring to become a robotics engineer 
-            in hopes of improving quality of life and making the world a better place to live in.</p>
-        </div>
-        <div class="image">
-          <img src="images/profile.png">
-        </div>
-      </div>
-
-      <!-- Hobbies & Interests -->
-      <h2>Hobbies & Interests</h2>
-      <p>I'm an avid coder that has been writing code for over 5 years. 
-        Some of my passion projects that involve coding are automonous guided vehicle (AGV), pizza maker machine and autonomous driving. 
-        I also play football casually and was involved in a neighbourhood football club. 
-        Some of my interests include keeping up with the latest tech and board games.</p>
-
-      <!-- Achievements & Work Experiences-->
-      <div class="container">
-        <div class="list-container">
-          <h2>Achievements</h2>
-            <ul class="list">
-              <li>MAE Excellent Service Award 2023 Recipient</li>
-              <li>Singapore Polytechnic Engineering Show 2023 - Silver Award</li>
-              <li>Singapore Polytechnic Excellence Awards 2022 - Outstanding Contributions (Group)</li>
-            </ul>
-          </div>
-
-          <div class="list-container">
-            <h2>Work Experiences</h2>
-            <ul class="list">
-             <li>Challenger Apple Sales Associate</li>
-              <li>Sport Singapore Assistant Sports Technologist</li>
-            </ul>
-         </div>
-        </div>
-      </div>
-
       <!-- Contact -->
       <div class="container">
         <h2>Contact Me</h2>
       </div>
 
       <div class="container">
-        <a href="https://www.linkedin.com/in/yim-zheng-rong/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/yim-zheng-ron  g/"
+          ><i class="fa-brands fa-linkedin fa-2x"></i
+        ></a>
       </div>
-
     </div>
 
     <footer>Copyright @ Caspian616</footer>
-  
   </body>
+  <script src="scripts/main.js"></script>
 </html>
-
-<!-- <script src="scripts/main.js"></script> -->

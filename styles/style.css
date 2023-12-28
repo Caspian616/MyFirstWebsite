@@ -54,16 +54,64 @@ nav{
     width: 100% /* set width to 100% to show the underline */
 }
 
-html {
-    font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high */
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;
-  }
+nav .fa-solid{
+    display: none;
+}
 
-body {
-    margin: 0 auto;
-    background-color: #ffffff;
-    }
+.about-me{
+    width: 80%; /* width to only take 80% of the webpage */
+    margin: auto; /* to automatically center it horizontally */
+    padding-top: 80px; /* space from the top */
+    padding-bottom: 10px; /* space from the bottom */
+}
+
+.row{
+    display: flex; /* flex container */
+}
+
+.about-col{
+    flex-basis: 50%; /* set width to be 48% of the container's width */
+    padding: 30px 2px; /* 30px space from top, bottom and 2px space from left, right */
+}
+
+.about-col img{
+    width: 100%; /* take up full width of column */
+}
+
+.about-col h1{
+    padding-top: 0; /* zero padding */ 
+}
+
+.about-col p{
+    padding: 15px 0 25px; /* 15px padding top, 0 padding left right, 25px padding bottom */
+}
+
+.hobbies{
+    width: 80%;
+    margin: auto;
+}
+
+.achievements{
+    width: 80%; /* width to only take 80% of the webpage */
+    margin: auto; /* to automatically center it horizontally */
+    padding-top: 80px; /* space from the top */
+    padding-bottom: 10px; /* space from the bottom */
+}
+
+.achievements-col{
+    flex-basis: 50%; /* set width to be 48% of the container's width */
+    padding: 30px 2px; /* 30px space from top, bottom and 2px space from left, right */
+}
+
+.achievements-col h1{
+    padding-top: 0; /* zero padding */ 
+}
+
+.achievements-col p{
+    padding: 15px 0 25px; /* 15px padding top, 0 padding left right, 25px padding bottom */
+}
+
+
 
 .mainbody{
     padding: 50px 300px;
@@ -74,11 +122,6 @@ body {
     align-items: flex-start;
     justify-content: center;
 }
-
-img {
-    width: 500px;
-    height: 350px;
-    }
 
 .text {
     padding-right: 20px;
@@ -112,4 +155,31 @@ footer {
     margin-right: 20px; /* Adjust as needed to create space between lists */
   }
 
-@media (max-width){}
+@media(max-width: 700px){
+    .nav-links ul li{
+        display: block; /* becomes a block-level element */
+    }
+
+    .nav-links{
+        position:absolute; /* position with respect to its nearest positioned ancestor */
+        height: 100vh; /* 100% of viewport height */
+        width: 200px; /* width of element to 200px */
+        top: 15px; /* top of screen */
+        right: -200px; /* right of screen */
+        text-align: left; /* makes text on the left */
+        z-index: 2; /* stack ontop of elements with lower z-index */
+        transition: 1s;
+    }
+
+    nav .fa-solid{
+        display: block;
+        color: #000000;
+        margin:  10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+}
