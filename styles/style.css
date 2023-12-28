@@ -1,6 +1,61 @@
+*{ /* apply to all properties in html */
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik Doodle Shadow", sans-serif; /* apply font family to all elements */
+}
+
+.header{ 
+    min-height: 10vh; /* set the min height of the header */
+    width: 100%; /* set the total width of the header */
+}
+
+.header nav a{
+    text-decoration: none; /* no underline */
+    color: #1C50F5; /* color of text */
+    font-size: 20px /* font size of text */
+}
+
+nav{
+    display: flex; /* flex container */
+    padding: 2% 6%; /* 2% padding top and bottom, 6% padding left and right */
+    justify-content: space-between; /* align items along the main axis (horizontal) */
+    align-items: center; /* align items along the cross axis (vertical) */
+}
+
+.nav-links{
+    flex: 1; /* expand and fill the remaining space in a flex container */
+    text-align: right; /* align the items to the right */
+}
+
+.nav-links ul li{
+    list-style: none; /* no bullet points */
+    display: inline-block; /* to allow items to be placed on the same line */
+    padding: 0px 12px; /* to set left and right spacing between each links */
+    position: relative; /* position relative to its normal position */
+}
+
+.nav-links ul li a{
+    color: #1C50F5; /* color of text */
+    text-decoration: none; /* no underline */
+    font-size: 16px; /* font size of text */
+}
+
+.nav-links ul li::after{ /* insert additional content ontop of the actual content */
+    content: ''; /* empty content to generate content later on */
+    width: 0%; /* initial width to 0% */
+    height: 2px; /* thickness of line to be generated */
+    background: #000000; /* color of line */
+    display: block; /* display property to block to ensure content generated behaves like a block, taking up full width available */
+    margin: auto; /* centers the line */
+    transition: 0.5s; /* duration of transition effect */
+}
+
+.nav-links ul li:hover::after{ /* apply after effect on hover */
+    width: 100% /* set width to 100% to show the underline */
+}
+
 html {
-    font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
-    font-family: "Rubik Doodle Shadow", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+    font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high */
     color: rgb(0, 0, 0);
     background-color: #ffffff;
   }
@@ -21,21 +76,13 @@ body {
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 500px;
+    height: 350px;
     }
 
 .text {
     padding-right: 20px;
 }
-
-h1 {
-    font-size: 60px;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    color: #1C50F5;
-    }
 
 h2 {
     color: #1C50F5;
@@ -44,7 +91,6 @@ h2 {
 
 p,
 li {
-    font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
     }
@@ -65,3 +111,5 @@ footer {
     flex: 1;
     margin-right: 20px; /* Adjust as needed to create space between lists */
   }
+
+@media (max-width){}
