@@ -165,7 +165,7 @@ footer {
         height: 100vh; /* 100% of viewport height */
         width: 200px; /* width of element to 200px */
         top: 15px; /* top of screen */
-        right: 0px; /* right of screen */
+        right: -200px; /* right of screen */
         text-align: left; /* makes text on the left */
         z-index: 2; /* stack ontop of elements with lower z-index */
         transition: 1s;
