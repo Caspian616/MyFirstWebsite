@@ -4,6 +4,19 @@
     font-family: "Rubik Doodle Shadow", sans-serif; /* apply font family to all elements */
 }
 
+h2 {
+    color: #1C50F5;
+    font-size: 20px;
+}
+
+p,
+li {
+    line-height: 2;
+    letter-spacing: 1px;
+    }
+
+/* navigation bar */
+
 .header{ 
     min-height: 10vh; /* set the min height of the header */
     width: 100%; /* set the total width of the header */
@@ -58,11 +71,17 @@ nav .fa-solid{
     display: none;
 }
 
+nav h2{
+    display: none;
+}
+
+/* about me */
+
 .about-me{
     width: 80%; /* width to only take 80% of the webpage */
     margin: auto; /* to automatically center it horizontally */
     padding-top: 80px; /* space from the top */
-    padding-bottom: 10px; /* space from the bottom */
+    padding-bottom: 5px; /* space from the bottom */
 }
 
 .row{
@@ -86,10 +105,14 @@ nav .fa-solid{
     padding: 15px 0 25px; /* 15px padding top, 0 padding left right, 25px padding bottom */
 }
 
+/* hobbies */
+
 .hobbies{
     width: 80%;
     margin: auto;
 }
+
+/* achievements & work experiences */
 
 .achievements{
     width: 80%; /* width to only take 80% of the webpage */
@@ -111,75 +134,79 @@ nav .fa-solid{
     padding: 15px 0 25px; /* 15px padding top, 0 padding left right, 25px padding bottom */
 }
 
+/* contact */
 
-
-.mainbody{
-    padding: 50px 300px;
+.contact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
 }
 
-.container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+.contact h2{
+    margin-bottom: 10px;
 }
 
-.text {
-    padding-right: 20px;
+.contact a i {
+    color:rgb(30, 48, 80);
 }
 
-h2 {
-    color: #1C50F5;
-    font-size: 20px;
-}
-
-p,
-li {
-    line-height: 2;
-    letter-spacing: 1px;
-    }
-
-.list {
-    margin: 0;
-    padding: 0;
-}
+/* footer */
 
 footer {
+    width: 80%;
+    margin: auto;
     text-align: center;
     padding: 20px;
     color: #000;
     font-size: 12px;
   }
 
-.list-container {
-    flex: 1;
-    margin-right: 20px; /* Adjust as needed to create space between lists */
-  }
+/* media query */
 
 @media(max-width: 700px){
+
+    /* nav bar */
+
     .nav-links ul li{
         display: block; /* becomes a block-level element */
     }
 
     .nav-links{
         position:absolute; /* position with respect to its nearest positioned ancestor */
+        background:#e1e2e7;
         height: 100vh; /* 100% of viewport height */
-        width: 200px; /* width of element to 200px */
+        width: 300px; /* width of element to 200px */
         top: 0px; /* top of screen */
-        right: -200px; /* right of screen */
-        text-align: left; /* makes text on the left */
+        right: -300px; /* right of screen */
+        text-align: center; /* makes text on the left */
         z-index: 2; /* stack ontop of elements with lower z-index */
         transition: 1s;
+    }
+
+    nav h2{
+        display: inline-block;
+        padding: 20px;
     }
 
     nav .fa-solid{
         display: block;
         color: #000000;
-        margin:  10px;
-        font-size: 22px;
+        margin: 10px;
+        font-size: 20px;
         cursor: pointer;
+        text-align: right;
     }
 
     .nav-links ul{
-        padding: 30px;
+        padding: 5px;
     }
+
+    .about-me .row{
+        flex-direction: column-reverse;
+    }
+
+    .row{
+        flex-direction: column;    
+    }
+
 }
