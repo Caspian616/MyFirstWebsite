@@ -134,6 +134,12 @@ nav h2{
     padding: 15px 0 25px; /* 15px padding top, 0 padding left right, 25px padding bottom */
 }
 
+/* projects */
+.projects{
+    width: 80%;
+    margin: auto;
+}
+
 /* contact */
 
 .contact{
