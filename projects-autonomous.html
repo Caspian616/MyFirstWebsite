@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="styles/style.css" rel="stylesheet" />
+    <!-- css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- website icon -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Caspian" />
+    <!-- author -->
+    <meta name="description" content="A website made by Caspian" />
+    <!-- website description -->
+    <title>Caspian's Portfolio</title>
+    <!-- name of website -->
+  </head>
+
+  <body>
+    <!-- Navigation Bar/Header -->
+    <section class="header">
+      <!-- Create section with class name = header -->
+      <nav>
+        <!-- nav bar -->
+        <a href="index.html" id="title"><h1>Caspian's Portfolio</h1></a>
+        <!-- h1 link to index.html-->
+        <div class="nav-links" id="navLinks">
+          <!-- nav links -->
+            <i class="fa-solid fa-arrow-right" onclick="hideMenu()"></i>
+          <ul>
+            <h2>My Portfolio</h2>
+            <!-- unordered links -->
+            <li><a href="index.html">HOME</a></li>
+            <!-- links -->
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="">WORK EXPERIENCES</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="menuBar" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+    <section class="autonomous-project">
+      <h1>Autonomous Driving Vehicle</h1>
+        <div class="row">
+            <div class="about-col">
+              <h2>Introduction</h2>
+              <p>
+                This project started in the academic year 2223S1 and it consists of a team of 4 members from the Diploma of Mechatronics & Robotics (DMRO) in SP,
+                the engineering skill sets used in this project are mainly electrical, mechanical and programming
+              </p>
+              <h2>Objective</h2>
+              <p>
+                The objective of this project is to achieve wireless control of the vehicle's DC Brushless Motor with computer vision, as well as to 
+                demonstrate real time monitoring and control from a graphical user interface (GUI)
+              </p>
+              <h2>Scope</h2>
+              <p>
+                For the computer vision part, the team decided to use neural network to detect the different traffic light states, red and green to control
+                the motors of the vehicle.
+              </p>
+            </div>
+            <div class="about-col">
+              <img src="images/spfyp.jpeg" />
+            </div>
+          </div>
+    </section>
+
+    <section class="autonomous-project-facts">
+      <h1>Key components</h1>
+      <div class="row">
+        <div class="facts-col">
+          <h2>Mechanical</h2>
+          <ul class="list">
+            <li>MAE Excellent Service Award 2023 Recipient</li>
+            <li>Singapore Polytechnic Engineering Show 2023 - Silver Award</li>
+            <li>
+              Singapore Polytechnic Excellence Awards 2022 - Outstanding
+              Contributions (Group)
+            </li>
+          </ul>
+        </div>
+        <div class="facts-col">
+          <h2>Electrical</h2>
+          <ul class="list">
+            <li>Challenger Apple Sales Associate</li>
+            <li>Sport Singapore Assistant Sports Technologist</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <a href="https://www.linkedin.com/in/yim-zheng-rong/"
+      ><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/Caspian616"
+      ><i class="fa-brands fa-github fa-2x"></i></a>
+    </section>
+
+    <footer>Copyright @ Caspian616</footer>
+
+  </body>
+
+  <script src="scripts/main.js"></script>
+
+</html>

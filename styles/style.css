@@ -20,6 +20,7 @@ li {
 .header{ 
     min-height: 10vh; /* set the min height of the header */
     width: 100%; /* set the total width of the header */
+    background-color:aliceblue;
 }
 
 .header nav a{
@@ -90,7 +91,7 @@ nav h2{
 
 .about-col{
     flex-basis: 50%; /* set width to be 48% of the container's width */
-    padding: 30px 2px; /* 30px space from top, bottom and 2px space from left, right */
+    padding: 30px 20px; /* 30px space from top, bottom and 2px space from left, right */
 }
 
 .about-col img{
@@ -180,9 +181,48 @@ img {
     background-position: center;
 }
 
+/* autonomous-project*/
+.autonomous-project{
+    padding-top: 80px; /* space from the top */
+    width: 80%;
+    margin: auto;
+}
+
+.autonomous-project h1{
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.autonomous-project-facts h1{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+.autonomous-project-facts{
+    padding-top: 80px; /* space from the top */
+    width: 80%;
+    margin: auto;
+}
+
+.facts-col{
+    flex-basis: 50%; /* set width to be 48% of the container's width */
+    padding: 30px 2px; /* 30px space from top, bottom and 2px space from left, right */
+}
+
+.facts h1{
+    padding-top: 0; /* zero padding */ 
+}
+
+.facts p{
+    padding: 15px 0 25px; /* 15px padding top, 0 padding left right, 25px padding bottom */
+}
+
+
 /* contact */
 
 .contact{
+    padding-top: 100px;
     width: 80%;
     margin: auto;
     text-align: center;
