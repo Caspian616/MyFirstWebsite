@@ -91,7 +91,7 @@ nav h2{
 
 .about-col{
     flex-basis: 50%; /* set width to be 48% of the container's width */
-    padding: 30px 20px; /* 30px space from top, bottom and 2px space from left, right */
+    padding: 30px 0px; /* 30px space from top, bottom and 2px space from left, right */
 }
 
 .about-col img{
@@ -104,6 +104,10 @@ nav h2{
 
 .about-col p{
     padding: 15px 0 25px; /* 15px padding top, 0 padding left right, 25px padding bottom */
+}
+
+.about-col img{
+    padding-left: 20px;
 }
 
 /* hobbies */
