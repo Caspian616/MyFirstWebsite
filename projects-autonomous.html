@@ -95,7 +95,115 @@
             <li>Arduino</li>
           </ul>
         </div>
+        <div class="facts-col">
+          <h2>Programming</h2>
+          <ul class="list">
+            <li>Graphical User Interface (GUI)</li>
+            <li>Proximity Detection</li>
+          </ul>
+        </div>
+        <div class="facts-col">
+          <h2>Artificial Intelligence</h2>
+          <ul class="list">
+            <li>Traffic lights detection</li>
+            <li>Lane detection</li>
+          </ul>
+        </div>
       </div>
+    </section>
+
+    <section class="autonomous-project">
+      <h1>Electrical Components</h1>
+        <div class="row">
+            <div class="electrical-col">
+              <h2>Odrive motor controller</h2>
+              <img src="images/odrive.png">
+              <p>
+                This motor controller is powered by a battery, is used to control the driving DC brushless motors of the vehicle, it also has a brake resistor.
+              </p>
+            </div>
+            <div class="electrical-col">
+              <h2>Nvidia Jetson Nano</h2>
+              <img src="images/nvidia.jpg">
+              <p>
+                Nvidia Jetson Nano is a key component as it programs the Odrive motor controller of the vehicle which in turns drives the DC brushless motors.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="electrical-col">
+              <h2>Raspberry Pi 4B</h2>
+              <img src="images/rpi4b.png">
+              <p>
+                Raspberry Pi 4B is another key component as it operates the ultrasonic sensors as well as control the Arduino.
+              </p>
+            </div>
+            <div class="electrical-col">
+              <h2>Arduino</h2>
+              <img src="images/arduino.png">
+              <p>
+                Arduino is the last key component as it operates the temperature sensors as well as the steering of the vehicle
+              </p>
+            </div>
+          </div>
+    </section>
+
+    <section class="autonomous-project">
+      <h1>Mechanical Components</h1>
+        <div class="row">
+            <div class="electrical-col">
+              <h2>Brushless DC motors</h2>
+              <video width = "90%" height = "40%" autoplay loop muted>
+                <source src="videos/moving_car.mp4" type="video/mp4">
+              </video>
+              <video width = "90%" height = "40%" autoplay loop muted>
+                <source src="videos/moving_car_2.mp4" type="video/mp4">
+              </video>
+              <p>
+                The driving motors are controlled using the onboard Odrive motor controller which is capable of controlling the motors speed with precision. 
+              </p>
+            </div>
+            <div class="electrical-col">
+              <h2>Steering Mechanism</h2>
+              <video width = "90%" height = "40%" autoplay loop muted>
+                <source src="videos/manual_steering.mp4" type="video/mp4">
+              </video>
+              <video width = "90%" height = "40%" autoplay loop muted>
+                <source src="videos/powered_steering.mp4" type="video/mp4">
+              </video>
+              <p>
+                The steering mechanism used is ackermann steering, the motors are driven by a motor driver. Feedback on turn angle is done with potentiometers and discrete ADCs.
+                Calibration of the steering motor is done to get a reference of the steering angles and to determine the 
+                extreme limits of the linear actuator. 
+              </p>
+            </div>
+          </div>
+    </section>
+
+    <section class="autonomous-project">
+      <h1>Programming</h1>
+        <div class="row">
+            <div class="electrical-col">
+              <h2>Graphical user Interface (GUI)</h2>
+              <video width = "100%" height = "90%" autoplay loop muted>
+                <source src="videos/gui.mp4" type="video/mp4">
+              </video>
+              <p>
+                The graphical user interface is created using Tkinter, a python library used to create interfaces. In this interface, the user can monitor the speed,
+                temperature at crucial parts of the vehicle, voltage of the battery as well as any system errors.
+                The user can also control the vehicle from the interface by either using the mouse or pressing the "WASD" keys on the keyboard.
+              </p>
+            </div>
+            <div class="electrical-col">
+              <h2>Proximity Detection</h2>
+              <video width = "100%" height = "90%" autoplay loop muted>
+                <source src="videos/proximity.mp4" type="video/mp4">
+              </video>
+              <p>
+                By reading data from the ultrasonic sensor, the program is able to stop the vehicle when the distance is within close proximity.
+              </p>
+            </div>
+          </div>
     </section>
 
     <section class="contact">

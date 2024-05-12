@@ -222,6 +222,30 @@ img {
     padding: 15px 0 25px; /* 15px padding top, 0 padding left right, 25px padding bottom */
 }
 
+.electrical-col{
+    flex-basis: 50%; /* set width to be 48% of the container's width */
+    padding: 20px 0px; /* 30px space from top, bottom and 2px space from left, right */
+    margin-right: 100px;
+}
+
+.electrical-col img{
+    width: 50%; /* take up full width of column */
+    height: 60%;
+    padding-top: 20px;
+}
+
+.electrical-col h1{
+    padding-top: 0; /* zero padding */ 
+}
+
+.electrical-col p{
+    padding: 15px 0 25px; /* 15px padding top, 0 padding left right, 25px padding bottom */
+}
+
+.electrical-col video{
+    padding-top: 10px;
+    object-fit: fill;
+}
 
 /* contact */
 
